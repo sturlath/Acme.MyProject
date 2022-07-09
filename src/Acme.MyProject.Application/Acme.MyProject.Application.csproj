@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Acme.MyProject</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Acme.MyProject.Domain\Acme.MyProject.Domain.csproj" />
+    <ProjectReference Include="..\Acme.MyProject.Application.Contracts\Acme.MyProject.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Docs.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Saas.Host.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.Identity.Pro.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.IdentityServer.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Public.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Admin.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.LanguageManagement.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.TextTemplateManagement.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.LeptonTheme.Management.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.Gdpr.Application" Version="5.3.2" />
+  </ItemGroup>
+
+</Project>
