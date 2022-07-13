@@ -1,24 +1,24 @@
-using Localization.Resources.AbpUi;
 using Acme.MyProject.Localization;
+using Localization.Resources.AbpUi;
 using Volo.Abp.Account;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.FeatureManagement;
+using Volo.Abp.Gdpr;
 using Volo.Abp.Identity;
 using Volo.Abp.IdentityServer;
 using Volo.Abp.LanguageManagement;
-using Volo.Abp.Modularity;
-using Volo.Abp.PermissionManagement.HttpApi;
-using Volo.Saas.Host;
 using Volo.Abp.LeptonTheme;
 using Volo.Abp.Localization;
+using Volo.Abp.Modularity;
+using Volo.Abp.PermissionManagement.HttpApi;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TextTemplateManagement;
-using Volo.Abp.Gdpr;
 using Volo.Docs;
+using Volo.Saas.Host;
 
 namespace Acme.MyProject;
 
- [DependsOn(
+[DependsOn(
     typeof(MyProjectApplicationContractsModule),
     typeof(AbpIdentityHttpApiModule),
     typeof(AbpPermissionManagementHttpApiModule),
@@ -35,7 +35,7 @@ namespace Acme.MyProject;
     typeof(TextTemplateManagementHttpApiModule)
     )]
 [DependsOn(typeof(DocsHttpApiModule))]
-    public class MyProjectHttpApiModule : AbpModule
+public class MyProjectHttpApiModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {

@@ -46,6 +46,7 @@ using Volo.Abp.UI.Navigation;
 using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.VirtualFileSystem;
 using Volo.Docs;
+using Volo.Docs.Admin;
 using Volo.Saas.Host;
 
 namespace Acme.MyProject.Web;
@@ -67,7 +68,8 @@ namespace Acme.MyProject.Web;
     typeof(TextTemplateManagementWebModule),
     typeof(AbpGdprWebModule),
     typeof(AbpSwashbuckleModule),
-    typeof(AbpAspNetCoreSerilogModule)
+    typeof(AbpAspNetCoreSerilogModule),
+    typeof(DocsAdminWebModule)
     )]
 [DependsOn(typeof(DocsWebModule))]
 public class MyProjectWebModule : AbpModule

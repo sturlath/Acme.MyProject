@@ -16,6 +16,7 @@
     <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="5.3.2" />
     <PackageReference Include="Volo.Abp.SettingManagement.Application.Contracts" Version="5.3.2" />
     <PackageReference Include="Volo.Docs.Application.Contracts" Version="5.3.2" />
+	  <PackageReference Include="Volo.Docs.Admin.Application.Contracts" Version="5.3.2" />
     <PackageReference Include="Volo.Saas.Host.Application.Contracts" Version="5.3.2" />
     <PackageReference Include="Volo.Abp.AuditLogging.Application.Contracts" Version="5.3.2" />
     <PackageReference Include="Volo.Abp.Identity.Pro.Application.Contracts" Version="5.3.2" />

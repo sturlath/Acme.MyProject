@@ -40,6 +40,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="6.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="6.0.5" />
     <PackageReference Include="Volo.Docs.Web" Version="5.3.2" />
+	  <PackageReference Include="Volo.Docs.Admin.Web" Version="5.3.1" />
+	  <PackageReference Include="Volo.Docs.Admin.Application" Version="5.3.1" />
   </ItemGroup>
 
   <ItemGroup>
