@@ -47,6 +47,7 @@ using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.VirtualFileSystem;
 using Volo.Docs;
 using Volo.Docs.Admin;
+using Volo.Docs.Documents.FullSearch.Elastic;
 using Volo.Saas.Host;
 
 namespace Acme.MyProject.Web;
@@ -112,10 +113,10 @@ public class MyProjectWebModule : AbpModule
     private void ConfigureDocs(IConfiguration configuration)
     {
         //HTTP Error 500.30 - ASP.NET Core app failed to start
-        //Configure<DocsElasticSearchOptions>(options =>
-        //{
-        //    options.Enable = true;
-        //});
+        Configure<DocsElasticSearchOptions>(options =>
+        {
+            options.Enable = true;
+        });
 
         Configure<DocsUiOptions>(options =>
         {
